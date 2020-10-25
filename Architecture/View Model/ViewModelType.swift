@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ViewModelType: class {
+public protocol ViewModelType: class {
 
     associatedtype Input
     associatedtype Output
@@ -22,11 +22,11 @@ protocol ViewModelType: class {
     init(dependencies: Dependency, inputs: Input)
 }
 
-struct ViewModelAssembler<ViewModel: ViewModelType> {
+public struct ViewModelAssembler<ViewModel: ViewModelType> {
 
     let dependencies: ViewModel.Dependency
 
-    init(_ dependencies: ViewModel.Dependency) {
+    public init(_ dependencies: ViewModel.Dependency) {
         self.dependencies = dependencies
     }
 

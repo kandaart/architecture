@@ -7,7 +7,7 @@
 
 import ReactiveKit
 
-protocol CoordinatorType: class {
+public protocol CoordinatorType: class {
 
     associatedtype CoordinatorInput
     associatedtype CoordinatorResult
@@ -27,7 +27,7 @@ extension CoordinatorType {
         navigator._childCoordinators = navigator._childCoordinators.filter { $0 !== (coordinator as AnyObject) }
     }
 
-    func coordinate<T: CoordinatorType, U>(
+    public func coordinate<T: CoordinatorType, U>(
         to coordinator: T,
         input: T.CoordinatorInput
     ) -> SafeSignal<U> where U == T.CoordinatorResult {
@@ -40,12 +40,12 @@ extension CoordinatorType {
     }
 }
 
-class CoordinatorNavigator {
+public class CoordinatorNavigator {
 
     fileprivate var _childCoordinators = [AnyObject]()
     var childCoordinators: [AnyObject] {
         _childCoordinators
     }
 
-    init() {}
+    public init() {}
 }

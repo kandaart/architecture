@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ModelConvertible {
+public protocol ModelConvertible {
 
     associatedtype Entity
     associatedtype Model

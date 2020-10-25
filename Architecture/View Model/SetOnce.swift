@@ -8,13 +8,13 @@
 import Foundation
 
 @propertyWrapper
-class setOnce<Value> { // swiftlint:disable:this type_name
+public class setOnce<Value> { // swiftlint:disable:this type_name
 
-    var wrappedValue: Value? {
+    public var wrappedValue: Value? {
         didSet {
             assert(oldValue == nil, "Not allowed to re-assign value when using @SetOnce!")
         }
     }
 
-    init() {}
+    public init() {}
 }

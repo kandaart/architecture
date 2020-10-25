@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ViewType: Presentable {
+public protocol ViewType: Presentable {
 
     associatedtype ViewInput
     associatedtype ViewOutput

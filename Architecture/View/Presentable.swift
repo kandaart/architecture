@@ -7,14 +7,14 @@
 
 import Foundation
 
-protocol Presentable {
+public protocol Presentable {
 
     func setupContent()
     func arrangeSubviews()
     func layout()
 }
 
-extension Presentable {
+public extension Presentable {
 
     func setupUI() {
         setupContent()

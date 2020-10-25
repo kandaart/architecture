@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol ViewModelBindable: class, Presentable {
+public protocol ViewModelBindable: class, Presentable {
 
     associatedtype ViewModel: ViewModelType
 
@@ -19,7 +19,7 @@ protocol ViewModelBindable: class, Presentable {
     static func create() -> Self
 }
 
-extension ViewModelBindable where Self: UIViewController {
+public extension ViewModelBindable where Self: UIViewController {
 
     @discardableResult
     func bindViewModel(assembler: ViewModelAssembler<ViewModel>) -> ViewModel {

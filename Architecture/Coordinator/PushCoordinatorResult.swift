@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum PushCoordinatorResult<T> {
+public enum PushCoordinatorResult<T> {
     case popped(withGesture: Bool)
     case finished(T)
 }

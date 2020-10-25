@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ModalCoordinatorResult<T> {
+public enum ModalCoordinatorResult<T> {
     case dismissed(withGesture: Bool)
     case finished(T)
 }
