@@ -1,0 +1,2 @@
+github "DeclarativeHub/ReactiveKit" ~> 3.0
+github "DeclarativeHub/Bond" ~> 7.0
