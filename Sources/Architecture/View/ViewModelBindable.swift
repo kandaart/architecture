@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol ViewModelBindable: class, Presentable {
+public protocol ViewModelBindable: AnyObject, Presentable {
 
     associatedtype ViewModel: ViewModelType
 
