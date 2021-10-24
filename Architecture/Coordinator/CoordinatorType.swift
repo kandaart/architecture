@@ -7,7 +7,7 @@
 
 import ReactiveKit
 
-public protocol CoordinatorType: class {
+public protocol CoordinatorType: AnyObject {
 
     associatedtype CoordinatorInput
     associatedtype CoordinatorResult

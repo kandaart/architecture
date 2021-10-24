@@ -3,14 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3F1A814C2544DEE9004A9DAD /* Architecture.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F1A813E2544DEE9004A9DAD /* Architecture.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F1A815B2544E444004A9DAD /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1A81582544E444004A9DAD /* ReactiveKit.framework */; };
-		3F1A815D2544E445004A9DAD /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1A81592544E444004A9DAD /* Bond.framework */; };
-		3F1A815F2544E445004A9DAD /* Differ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1A815A2544E444004A9DAD /* Differ.framework */; };
 		3F1A81732544E597004A9DAD /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A81722544E597004A9DAD /* CoordinatorType.swift */; };
 		3F1A81812544E5F6004A9DAD /* PushCoordinatorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A81802544E5F6004A9DAD /* PushCoordinatorResult.swift */; };
 		3F1A81852544E600004A9DAD /* ModalCoordinatorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A81842544E600004A9DAD /* ModalCoordinatorResult.swift */; };
@@ -20,15 +17,14 @@
 		3F1A81A42544E864004A9DAD /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A81A32544E864004A9DAD /* Presentable.swift */; };
 		3F1A81AC2544E912004A9DAD /* SetOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A81AB2544E912004A9DAD /* SetOnce.swift */; };
 		3F1A81B32544E9B4004A9DAD /* ModelConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A81B22544E9B4004A9DAD /* ModelConvertible.swift */; };
+		6370E61F27256930006E9B5B /* ReactiveKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6370E61E27256930006E9B5B /* ReactiveKit */; };
+		6370E6222725694A006E9B5B /* Bond in Frameworks */ = {isa = PBXBuildFile; productRef = 6370E6212725694A006E9B5B /* Bond */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F1A813B2544DEE9004A9DAD /* Architecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Architecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F1A813E2544DEE9004A9DAD /* Architecture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Architecture.h; sourceTree = "<group>"; };
 		3F1A813F2544DEE9004A9DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F1A81582544E444004A9DAD /* ReactiveKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveKit.framework; path = Carthage/Build/iOS/ReactiveKit.framework; sourceTree = "<group>"; };
-		3F1A81592544E444004A9DAD /* Bond.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bond.framework; path = Carthage/Build/iOS/Bond.framework; sourceTree = "<group>"; };
-		3F1A815A2544E444004A9DAD /* Differ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Differ.framework; path = Carthage/Build/iOS/Differ.framework; sourceTree = "<group>"; };
 		3F1A81722544E597004A9DAD /* CoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
 		3F1A81802544E5F6004A9DAD /* PushCoordinatorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushCoordinatorResult.swift; sourceTree = "<group>"; };
 		3F1A81842544E600004A9DAD /* ModalCoordinatorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCoordinatorResult.swift; sourceTree = "<group>"; };
@@ -45,9 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F1A815B2544E444004A9DAD /* ReactiveKit.framework in Frameworks */,
-				3F1A815F2544E445004A9DAD /* Differ.framework in Frameworks */,
-				3F1A815D2544E445004A9DAD /* Bond.framework in Frameworks */,
+				6370E61F27256930006E9B5B /* ReactiveKit in Frameworks */,
+				6370E6222725694A006E9B5B /* Bond in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,9 +82,6 @@
 		3F1A81572544E444004A9DAD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3F1A81592544E444004A9DAD /* Bond.framework */,
-				3F1A815A2544E444004A9DAD /* Differ.framework */,
-				3F1A81582544E444004A9DAD /* ReactiveKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,13 +146,16 @@
 				3F1A81382544DEE9004A9DAD /* Frameworks */,
 				3F1A81392544DEE9004A9DAD /* Resources */,
 				3F1A816B2544E4EC004A9DAD /* Swiftlint */,
-				3F1A81662544E472004A9DAD /* Carthage */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Architecture;
+			packageProductDependencies = (
+				6370E61E27256930006E9B5B /* ReactiveKit */,
+				6370E6212725694A006E9B5B /* Bond */,
+			);
 			productName = Architecture;
 			productReference = 3F1A813B2544DEE9004A9DAD /* Architecture.framework */;
 			productType = "com.apple.product-type.framework";
@@ -189,6 +184,10 @@
 				Base,
 			);
 			mainGroup = 3F1A81312544DEE9004A9DAD;
+			packageReferences = (
+				6370E61D27256930006E9B5B /* XCRemoteSwiftPackageReference "ReactiveKit" */,
+				6370E6202725694A006E9B5B /* XCRemoteSwiftPackageReference "Bond" */,
+			);
 			productRefGroup = 3F1A813C2544DEE9004A9DAD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -209,30 +208,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3F1A81662544E472004A9DAD /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/ReactiveKit.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Differ.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Bond.framework",
-			);
-			name = Carthage;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReactiveKit.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Differ.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Bond.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
 		3F1A816B2544E4EC004A9DAD /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -401,14 +376,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = X8NGAF4F8H;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Architecture/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -423,7 +395,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -433,14 +405,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = X8NGAF4F8H;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Architecture/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -454,7 +423,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -480,6 +449,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6370E61D27256930006E9B5B /* XCRemoteSwiftPackageReference "ReactiveKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DeclarativeHub/ReactiveKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.18.3;
+			};
+		};
+		6370E6202725694A006E9B5B /* XCRemoteSwiftPackageReference "Bond" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DeclarativeHub/Bond.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6370E61E27256930006E9B5B /* ReactiveKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6370E61D27256930006E9B5B /* XCRemoteSwiftPackageReference "ReactiveKit" */;
+			productName = ReactiveKit;
+		};
+		6370E6212725694A006E9B5B /* Bond */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6370E6202725694A006E9B5B /* XCRemoteSwiftPackageReference "Bond" */;
+			productName = Bond;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F1A81322544DEE9004A9DAD /* Project object */;
 }
