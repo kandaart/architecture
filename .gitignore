@@ -15,5 +15,6 @@ xcuserdata/
 *.dSYM
 .build/
 
-## SPM
-.swiftpm/
+# Carthage
+Carthage/Checkouts
+Carthage/Build
