@@ -9,7 +9,8 @@ Welcome to the framework describing a skeleton for MVVM-C architecture.
 Add following code to the `Package.swift` file and update dependencies.
 ```swift
 dependencies: [
-    .package(name: "Architecture", url: "https://github.com/kandaart/architecture.git", from: "2.0.0")
+    .package(name: "Architecture", url: "https://github.com/kandaart/architecture.git", from: "2.0.0"),
+    ...
 ],
 targets: [
     .target(
